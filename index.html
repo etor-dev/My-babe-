@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Secret Message For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars-bg"></div>
+
+  <div class="container">
+    <header>
+      <span class="badge">Created Just For You My Heartbeart❤️</span>
+      <h1>To My One and only Akua🌟 Precious❤️ ✨</h1>
+      <p class="subtitle">Click on any love note below to open it ✨</p>
+    </header>
+
+    <!-- Interactive Envelope Cards -->
+    <div class="cards-grid">
+      <div class="card" onclick="openNote(1)">
+        <div class="card-icon">💌</div>
+        <h3>Why I Love You</h3>
+        <p class="click-hint">Click to open</p>
+      </div>
+
+      <div class="card" onclick="openNote(2)">
+        <div class="card-icon">🌟</div>
+        <h3>Favorite Memories</h3>
+        <p class="click-hint">Click to open</p>
+      </div>
+
+      <div class="card" onclick="openNote(3)">
+        <div class="card-icon">🎟️</div>
+        <h3>Love Coupons</h3>
+        <p class="click-hint">Click to open</p>
+      </div>
+    </div>
+
+    <!-- Modal Popup for Messages -->
+    <div id="noteModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeNote()">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <!-- Interactive Love Calculator / Quiz -->
+    <div class="interactive-section">
+      <h2>How much do I love you?</h2>
+      <button class="love-btn" onclick="calculateLove()">Calculate Love Percentage 💖</button>
+      <div id="loveResult" class="love-result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
